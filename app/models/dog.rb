@@ -5,7 +5,7 @@ class Dog
 
   @@all = []
 
-  def initialize(attributes)
+  def initialize(name, breed, age)
     binding.pry
     attributes.each do |key, value|
       self.send("#{key}=", value)
