@@ -6,10 +6,9 @@ class Dog
   @@all = []
 
   def initialize(name, breed, age)
-    binding.pry
-    attributes.each do |key, value|
-      self.send("#{key}=", value)
-    end
+    @name = name
+    @breed = breed
+    @age = age
   end
 
   def save
